@@ -27,6 +27,21 @@ body{
     z-index: 2;
 }
 
+input[type="checkbox"]:checked ~.slider{
+    animation: autoRun 2s linear infinite;
+}
+
+.input{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+#speed{
+    display: none;
+}
+
 @keyframes autoRun {
     from{
         transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
@@ -36,6 +51,8 @@ body{
     }
     
 }
+
+
 
 .banner .slider .item{
     position: absolute;
