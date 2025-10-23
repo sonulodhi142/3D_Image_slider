@@ -24,6 +24,7 @@ body{
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autoRun 20s linear infinite;
+    z-index: 2;
 }
 
 @keyframes autoRun {
@@ -60,4 +61,43 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.banner .content h1{
+    font-family: serif;
+    font-size: 10em;
+    line-height: 1em;
+    color: black;
+    position: relative;
+}
+
+.banner .content h1::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+.banner .content .author{
+    font-family: serif;
+    text-align: right;
+    max-width: 200px;
+}
+.banner .content h2{
+    font-size: 3em;
+}
+
+.banner .content .model{
+    background-image: url("./images/h1.jfif");
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 1;
 }
