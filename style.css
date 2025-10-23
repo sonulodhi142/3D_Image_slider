@@ -5,6 +5,10 @@
 }
 body{
     background-color: grey;
+    background-image: url("./images/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .banner{
@@ -37,6 +41,7 @@ input[type="checkbox"]:checked ~.slider{
     top: 20px;
     font-size: 2em;
     font-weight: bold;
+    color: white;
 }
 #speed{
     display: none;
@@ -64,6 +69,7 @@ input[type="checkbox"]:checked ~.slider{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .banner .content{
@@ -101,13 +107,14 @@ input[type="checkbox"]:checked ~.slider{
     font-family: serif;
     text-align: right;
     max-width: 200px;
+    color: white;
 }
 .banner .content h2{
     font-size: 3em;
 }
 
 .banner .content .model{
-    background-image: url("./images/h1.jfif");
+    background-image: url("./images/bg.png");
     width: 100%;
     height: 75vh;
     position: absolute;
