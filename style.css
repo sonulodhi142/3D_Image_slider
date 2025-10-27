@@ -57,12 +57,18 @@ input[type="checkbox"]:checked ~.slider{
     
 }
 
+.banner .slider:hover .item{
+    transform: scale(220%) ;
+    top: 50px;
+}
+
 
 
 .banner .slider .item{
     position: absolute;
     inset: 0 0 0 0;
     transform: rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(550px);
+    transition: transform 2s ease;
 }
 
 .banner .slider .item img{
